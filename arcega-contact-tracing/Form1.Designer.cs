@@ -44,6 +44,8 @@
             this.txtbxTimeIn = new System.Windows.Forms.TextBox();
             this.txtbxTimeOut = new System.Windows.Forms.TextBox();
             this.buttonDone = new System.Windows.Forms.Button();
+            this.lblTemperature = new System.Windows.Forms.Label();
+            this.txtbxTemperature = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // formTitle
@@ -51,7 +53,7 @@
             this.formTitle.AutoSize = true;
             this.formTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.formTitle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.formTitle.Location = new System.Drawing.Point(230, 44);
+            this.formTitle.Location = new System.Drawing.Point(360, 42);
             this.formTitle.Name = "formTitle";
             this.formTitle.Size = new System.Drawing.Size(184, 22);
             this.formTitle.TabIndex = 0;
@@ -137,7 +139,7 @@
             // 
             this.txtbxCompleteAddress.Location = new System.Drawing.Point(212, 186);
             this.txtbxCompleteAddress.Name = "txtbxCompleteAddress";
-            this.txtbxCompleteAddress.Size = new System.Drawing.Size(202, 20);
+            this.txtbxCompleteAddress.Size = new System.Drawing.Size(481, 20);
             this.txtbxCompleteAddress.TabIndex = 8;
             // 
             // lblDateOfVisit
@@ -146,7 +148,7 @@
             this.lblDateOfVisit.AutoSize = true;
             this.lblDateOfVisit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateOfVisit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblDateOfVisit.Location = new System.Drawing.Point(12, 211);
+            this.lblDateOfVisit.Location = new System.Drawing.Point(443, 106);
             this.lblDateOfVisit.Name = "lblDateOfVisit";
             this.lblDateOfVisit.Size = new System.Drawing.Size(118, 18);
             this.lblDateOfVisit.TabIndex = 9;
@@ -159,7 +161,7 @@
             this.lblTimeIn.AutoSize = true;
             this.lblTimeIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeIn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTimeIn.Location = new System.Drawing.Point(12, 239);
+            this.lblTimeIn.Location = new System.Drawing.Point(443, 133);
             this.lblTimeIn.Name = "lblTimeIn";
             this.lblTimeIn.Size = new System.Drawing.Size(69, 18);
             this.lblTimeIn.TabIndex = 10;
@@ -172,7 +174,7 @@
             this.lblTimeOut.AutoSize = true;
             this.lblTimeOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeOut.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTimeOut.Location = new System.Drawing.Point(12, 266);
+            this.lblTimeOut.Location = new System.Drawing.Point(443, 162);
             this.lblTimeOut.Name = "lblTimeOut";
             this.lblTimeOut.Size = new System.Drawing.Size(87, 18);
             this.lblTimeOut.TabIndex = 11;
@@ -181,23 +183,23 @@
             // 
             // txtbxDateOfVisit
             // 
-            this.txtbxDateOfVisit.Location = new System.Drawing.Point(212, 212);
+            this.txtbxDateOfVisit.Location = new System.Drawing.Point(567, 108);
             this.txtbxDateOfVisit.Name = "txtbxDateOfVisit";
-            this.txtbxDateOfVisit.Size = new System.Drawing.Size(202, 20);
+            this.txtbxDateOfVisit.Size = new System.Drawing.Size(126, 20);
             this.txtbxDateOfVisit.TabIndex = 12;
             // 
             // txtbxTimeIn
             // 
-            this.txtbxTimeIn.Location = new System.Drawing.Point(212, 237);
+            this.txtbxTimeIn.Location = new System.Drawing.Point(567, 134);
             this.txtbxTimeIn.Name = "txtbxTimeIn";
-            this.txtbxTimeIn.Size = new System.Drawing.Size(202, 20);
+            this.txtbxTimeIn.Size = new System.Drawing.Size(126, 20);
             this.txtbxTimeIn.TabIndex = 13;
             // 
             // txtbxTimeOut
             // 
-            this.txtbxTimeOut.Location = new System.Drawing.Point(212, 264);
+            this.txtbxTimeOut.Location = new System.Drawing.Point(567, 160);
             this.txtbxTimeOut.Name = "txtbxTimeOut";
-            this.txtbxTimeOut.Size = new System.Drawing.Size(202, 20);
+            this.txtbxTimeOut.Size = new System.Drawing.Size(126, 20);
             this.txtbxTimeOut.TabIndex = 14;
             // 
             // buttonDone
@@ -210,11 +212,33 @@
             this.buttonDone.UseVisualStyleBackColor = true;
             this.buttonDone.Click += new System.EventHandler(this.buttonDoneClick);
             // 
+            // lblTemperature
+            // 
+            this.lblTemperature.AccessibleName = "";
+            this.lblTemperature.AutoSize = true;
+            this.lblTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTemperature.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTemperature.Location = new System.Drawing.Point(12, 212);
+            this.lblTemperature.Name = "lblTemperature";
+            this.lblTemperature.Size = new System.Drawing.Size(129, 18);
+            this.lblTemperature.TabIndex = 16;
+            this.lblTemperature.Text = "TEMPERATURE :";
+            this.lblTemperature.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtbxTemperature
+            // 
+            this.txtbxTemperature.Location = new System.Drawing.Point(212, 213);
+            this.txtbxTemperature.Name = "txtbxTemperature";
+            this.txtbxTemperature.Size = new System.Drawing.Size(97, 20);
+            this.txtbxTemperature.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 450);
+            this.ClientSize = new System.Drawing.Size(773, 450);
+            this.Controls.Add(this.txtbxTemperature);
+            this.Controls.Add(this.lblTemperature);
             this.Controls.Add(this.buttonDone);
             this.Controls.Add(this.txtbxTimeOut);
             this.Controls.Add(this.txtbxTimeIn);
@@ -258,6 +282,8 @@
         private System.Windows.Forms.TextBox txtbxTimeIn;
         private System.Windows.Forms.TextBox txtbxTimeOut;
         private System.Windows.Forms.Button buttonDone;
+        private System.Windows.Forms.Label lblTemperature;
+        private System.Windows.Forms.TextBox txtbxTemperature;
     }
 }
 
