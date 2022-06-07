@@ -32,6 +32,7 @@ namespace arcega_contact_tracing
         {
             StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing.txt");
             file.WriteLine("Full Name :" + txtbxFullName.Text);
+            file.WriteLine("Mobile/Phone Number :" + txtbxMobilePhoneNumber.Text);
             file.Close();
         }
     }
