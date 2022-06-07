@@ -16,5 +16,15 @@ namespace arcega_contact_tracing
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelFullName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
