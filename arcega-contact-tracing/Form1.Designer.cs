@@ -46,6 +46,9 @@
             this.buttonDone = new System.Windows.Forms.Button();
             this.lblTemperature = new System.Windows.Forms.Label();
             this.txtbxTemperature = new System.Windows.Forms.TextBox();
+            this.buttonNewForm = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // formTitle
@@ -53,7 +56,7 @@
             this.formTitle.AutoSize = true;
             this.formTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.formTitle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.formTitle.Location = new System.Drawing.Point(360, 42);
+            this.formTitle.Location = new System.Drawing.Point(308, 44);
             this.formTitle.Name = "formTitle";
             this.formTitle.Size = new System.Drawing.Size(184, 22);
             this.formTitle.TabIndex = 0;
@@ -72,7 +75,6 @@
             this.labelFullName.TabIndex = 1;
             this.labelFullName.Text = "FULL NAME :";
             this.labelFullName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelFullName.Click += new System.EventHandler(this.labelFullName_Click);
             // 
             // txtbxFullName
             // 
@@ -80,7 +82,6 @@
             this.txtbxFullName.Name = "txtbxFullName";
             this.txtbxFullName.Size = new System.Drawing.Size(202, 20);
             this.txtbxFullName.TabIndex = 2;
-            this.txtbxFullName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // labelMobilePhoneNumber
             // 
@@ -204,7 +205,7 @@
             // 
             // buttonDone
             // 
-            this.buttonDone.Location = new System.Drawing.Point(251, 391);
+            this.buttonDone.Location = new System.Drawing.Point(336, 383);
             this.buttonDone.Name = "buttonDone";
             this.buttonDone.Size = new System.Drawing.Size(140, 29);
             this.buttonDone.TabIndex = 15;
@@ -232,11 +233,42 @@
             this.txtbxTemperature.Size = new System.Drawing.Size(97, 20);
             this.txtbxTemperature.TabIndex = 17;
             // 
+            // buttonNewForm
+            // 
+            this.buttonNewForm.Location = new System.Drawing.Point(621, 409);
+            this.buttonNewForm.Name = "buttonNewForm";
+            this.buttonNewForm.Size = new System.Drawing.Size(140, 29);
+            this.buttonNewForm.TabIndex = 18;
+            this.buttonNewForm.Text = "New Form";
+            this.buttonNewForm.UseVisualStyleBackColor = true;
+            this.buttonNewForm.Click += new System.EventHandler(this.buttonNewFormClick);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(621, 271);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 19;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(678, 271);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 20;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 450);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.buttonNewForm);
             this.Controls.Add(this.txtbxTemperature);
             this.Controls.Add(this.lblTemperature);
             this.Controls.Add(this.buttonDone);
@@ -284,6 +316,9 @@
         private System.Windows.Forms.Button buttonDone;
         private System.Windows.Forms.Label lblTemperature;
         private System.Windows.Forms.TextBox txtbxTemperature;
+        private System.Windows.Forms.Button buttonNewForm;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 
