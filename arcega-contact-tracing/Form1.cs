@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,13 @@ namespace arcega_contact_tracing
         private void labelFullName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonDoneClick(object sender, EventArgs e)
+        {
+            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing.txt");
+            file.WriteLine("Full Name :" + txtbxFullName.Text);
+            file.Close();
         }
     }
 }

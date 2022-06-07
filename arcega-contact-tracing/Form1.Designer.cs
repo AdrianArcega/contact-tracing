@@ -43,6 +43,7 @@
             this.txtbxDateOfVisit = new System.Windows.Forms.TextBox();
             this.txtbxTimeIn = new System.Windows.Forms.TextBox();
             this.txtbxTimeOut = new System.Windows.Forms.TextBox();
+            this.buttonDone = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // formTitle
@@ -199,11 +200,22 @@
             this.txtbxTimeOut.Size = new System.Drawing.Size(202, 20);
             this.txtbxTimeOut.TabIndex = 14;
             // 
+            // buttonDone
+            // 
+            this.buttonDone.Location = new System.Drawing.Point(251, 391);
+            this.buttonDone.Name = "buttonDone";
+            this.buttonDone.Size = new System.Drawing.Size(140, 29);
+            this.buttonDone.TabIndex = 15;
+            this.buttonDone.Text = "Done";
+            this.buttonDone.UseVisualStyleBackColor = true;
+            this.buttonDone.Click += new System.EventHandler(this.buttonDoneClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 450);
+            this.Controls.Add(this.buttonDone);
             this.Controls.Add(this.txtbxTimeOut);
             this.Controls.Add(this.txtbxTimeIn);
             this.Controls.Add(this.txtbxDateOfVisit);
@@ -245,6 +257,7 @@
         private System.Windows.Forms.TextBox txtbxDateOfVisit;
         private System.Windows.Forms.TextBox txtbxTimeIn;
         private System.Windows.Forms.TextBox txtbxTimeOut;
+        private System.Windows.Forms.Button buttonDone;
     }
 }
 
