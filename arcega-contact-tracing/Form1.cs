@@ -29,9 +29,13 @@ namespace arcega_contact_tracing
             file.WriteLine("Time of visit :" + txtbxTimeIn.Text);
             file.WriteLine("Time out :" + txtbxTimeOut.Text);
             file.WriteLine("Temperature :" + txtbxTemperature.Text);
-            if (checkBox1.CheckState == CheckState.Checked)
+            if (checkBoxYes1.CheckState == CheckState.Checked)
             {
-                file.WriteLine(lblCompleteAddress.Text + "question 1 : Yes");
+                file.WriteLine(lblQuestion1.Text + " : Yes");
+            }
+            if (checkBoxNo1.CheckState == CheckState.Checked)
+            {
+                file.WriteLine(lblQuestion1.Text + " : No");
             }
             file.Close();
             
@@ -48,6 +52,11 @@ namespace arcega_contact_tracing
             txtbxTimeIn.Text = "";
             txtbxTimeOut.Text = "";
             txtbxTemperature.Text = "";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
