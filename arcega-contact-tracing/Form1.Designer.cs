@@ -91,6 +91,8 @@
             this.checkBoxYes4 = new System.Windows.Forms.CheckBox();
             this.checkBoxNo3 = new System.Windows.Forms.CheckBox();
             this.checkBoxYes3 = new System.Windows.Forms.CheckBox();
+            this.lblQuestionB4 = new System.Windows.Forms.Label();
+            this.txtbxQuestion4 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // formTitle
@@ -786,6 +788,27 @@
             this.checkBoxYes3.TabIndex = 58;
             this.checkBoxYes3.UseVisualStyleBackColor = false;
             // 
+            // lblQuestionB4
+            // 
+            this.lblQuestionB4.AccessibleName = "";
+            this.lblQuestionB4.AutoSize = true;
+            this.lblQuestionB4.BackColor = System.Drawing.Color.Transparent;
+            this.lblQuestionB4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestionB4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblQuestionB4.Location = new System.Drawing.Point(27, 595);
+            this.lblQuestionB4.Name = "lblQuestionB4";
+            this.lblQuestionB4.Size = new System.Drawing.Size(151, 18);
+            this.lblQuestionB4.TabIndex = 62;
+            this.lblQuestionB4.Text = "If yes, please specify :";
+            this.lblQuestionB4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtbxQuestion4
+            // 
+            this.txtbxQuestion4.Location = new System.Drawing.Point(184, 596);
+            this.txtbxQuestion4.Name = "txtbxQuestion4";
+            this.txtbxQuestion4.Size = new System.Drawing.Size(161, 20);
+            this.txtbxQuestion4.TabIndex = 63;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -795,6 +818,8 @@
             this.BackgroundImage = global::arcega_contact_tracing.Properties.Resources.appbackground_65_nature_outdoors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(808, 749);
+            this.Controls.Add(this.txtbxQuestion4);
+            this.Controls.Add(this.lblQuestionB4);
             this.Controls.Add(this.checkBoxNo4);
             this.Controls.Add(this.checkBoxYes4);
             this.Controls.Add(this.checkBoxNo3);
@@ -930,6 +955,8 @@
         private System.Windows.Forms.CheckBox checkBoxYes4;
         private System.Windows.Forms.CheckBox checkBoxNo3;
         private System.Windows.Forms.CheckBox checkBoxYes3;
+        private System.Windows.Forms.Label lblQuestionB4;
+        private System.Windows.Forms.TextBox txtbxQuestion4;
     }
 }
 

@@ -140,7 +140,7 @@ namespace arcega_contact_tracing
 
             if (checkBoxYes4.CheckState == CheckState.Checked)
             {
-                file.WriteLine(lblQuestionA4.Text + " : Yes ");
+                file.WriteLine(lblQuestionA4.Text + " : Yes , Specific Country : " + txtbxQuestion4.Text);
             }
             if (checkBoxNo4.CheckState == CheckState.Checked)
             {
@@ -271,6 +271,7 @@ namespace arcega_contact_tracing
                 checkBoxNo3.Checked = false;
             }
 
+            txtbxQuestion4.Text = "";
             if (checkBoxYes4.CheckState == CheckState.Checked)
             {
                 checkBoxYes4.Checked = false;
