@@ -20,7 +20,8 @@ namespace arcega_contact_tracing
         private void buttonDoneClick(object sender, EventArgs e)
         {
          
-            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing.txt");
+            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo.txt");
+            file.WriteLine("");
             file.WriteLine("Full Name :" + txtbxFullName.Text);
             file.WriteLine("Mobile/Phone Number :" + txtbxMobilePhoneNumber.Text);
             file.WriteLine("Email Address :" + txtbxEmailAddress.Text);
@@ -140,16 +141,16 @@ namespace arcega_contact_tracing
 
             if (checkBoxYes4.CheckState == CheckState.Checked)
             {
-                file.WriteLine(lblQuestionA4.Text + " : Yes" + "Specific country : " + txtbxQuestion4);
+                file.WriteLine(lblQuestionA4.Text + " : Yes ");
             }
             if (checkBoxNo4.CheckState == CheckState.Checked)
             {
                 file.WriteLine(lblQuestionA4.Text + " : No");
             }
+            file.WriteLine("");
             file.Close();
-            
-           
 
+            MessageBox.Show("You have submitted your form." , "Thank you!");
         }
         private void buttonNewFormClick(object sender, EventArgs e)
         {
@@ -162,7 +163,6 @@ namespace arcega_contact_tracing
             txtbxTimeIn.Text = "";
             txtbxTimeOut.Text = "";
             txtbxBodyTemperature.Text = "";
-            txtbxQuestion4.Text = "";
 
             if(checkBoxYes1.CheckState == CheckState.Checked)
             {
@@ -272,7 +272,6 @@ namespace arcega_contact_tracing
                 checkBoxNo3.Checked = false;
             }
 
-            txtbxQuestion4.Text = "";
             if (checkBoxYes4.CheckState == CheckState.Checked)
             {
                 checkBoxYes4.Checked = false;
@@ -281,12 +280,6 @@ namespace arcega_contact_tracing
             {
                 checkBoxNo4.Checked = false;
             }
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
