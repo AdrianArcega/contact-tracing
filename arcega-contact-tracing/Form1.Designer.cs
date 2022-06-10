@@ -292,7 +292,7 @@
             this.buttonReset.TabIndex = 18;
             this.buttonReset.Text = "Reset";
             this.buttonReset.UseVisualStyleBackColor = true;
-            this.buttonReset.Click += new System.EventHandler(this.buttonNewFormClick);
+            this.buttonReset.Click += new System.EventHandler(this.buttonResetClick);
             // 
             // checkBoxYes1
             // 

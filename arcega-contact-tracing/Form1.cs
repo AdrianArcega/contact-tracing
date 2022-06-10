@@ -19,7 +19,6 @@ namespace arcega_contact_tracing
         }
         private void buttonDoneClick(object sender, EventArgs e)
         {
-         
             StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo.txt");
             file.WriteLine("");
             file.WriteLine("Full Name :" + txtbxFullName.Text);
@@ -150,11 +149,11 @@ namespace arcega_contact_tracing
             file.WriteLine("");
             file.Close();
 
-            MessageBox.Show("You have submitted your form." , "Thank you!");
+            MessageBox.Show("You have submitted your form" , "Thank you!");
         }
-        private void buttonNewFormClick(object sender, EventArgs e)
+
+        private void buttonResetClick(object sender, EventArgs e)
         {
-          
             txtbxFullName.Text = "";
             txtbxMobilePhoneNumber.Text = "";
             txtbxEmailAddress.Text = "";
@@ -164,11 +163,11 @@ namespace arcega_contact_tracing
             txtbxTimeOut.Text = "";
             txtbxBodyTemperature.Text = "";
 
-            if(checkBoxYes1.CheckState == CheckState.Checked)
+            if (checkBoxYes1.CheckState == CheckState.Checked)
             {
                 checkBoxYes1.Checked = false;
             }
-            if(checkBoxNo1.CheckState == CheckState.Checked)
+            if (checkBoxNo1.CheckState == CheckState.Checked)
             {
                 checkBoxNo1.Checked = false;
             }
