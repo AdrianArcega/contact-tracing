@@ -162,6 +162,126 @@ namespace arcega_contact_tracing
             txtbxTimeIn.Text = "";
             txtbxTimeOut.Text = "";
             txtbxBodyTemperature.Text = "";
+            txtbxQuestion4.Text = "";
+
+            if(checkBoxYes1.CheckState == CheckState.Checked)
+            {
+                checkBoxYes1.Checked = false;
+            }
+            if(checkBoxNo1.CheckState == CheckState.Checked)
+            {
+                checkBoxNo1.Checked = false;
+            }
+
+            if (checkBoxYesA2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesA2.Checked = false;
+            }
+            if (checkBoxNoA2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoA2.Checked = false;
+            }
+
+            if (checkBoxYesB2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesB2.Checked = false;
+            }
+            if (checkBoxNoB2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoB2.Checked = false;
+            }
+
+            if (checkBoxYesC2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesC2.Checked = false;
+            }
+            if (checkBoxNoC2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoC2.Checked = false;
+            }
+
+            if (checkBoxYesD2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesD2.Checked = false;
+            }
+            if (checkBoxNoD2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoD2.Checked = false;
+            }
+
+            if (checkBoxYesE2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesE2.Checked = false;
+            }
+            if (checkBoxNoE2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoE2.Checked = false;
+            }
+
+            if (checkBoxYesF2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesF2.Checked = false;
+            }
+            if (checkBoxNoF2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoF2.Checked = false;
+            }
+
+            if (checkBoxYesG2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesG2.Checked = false;
+            }
+            if (checkBoxNoG2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoG2.Checked = false;
+            }
+
+            if (checkBoxYesH2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesH2.Checked = false;
+            }
+            if (checkBoxNoH2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoH2.Checked = false;
+            }
+
+            if (checkBoxYesI2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesI2.Checked = false;
+            }
+            if (checkBoxNoI2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoI2.Checked = false;
+            }
+
+            if (checkBoxYesJ2.CheckState == CheckState.Checked)
+            {
+                checkBoxYesJ2.Checked = false;
+            }
+            if (checkBoxNoJ2.CheckState == CheckState.Checked)
+            {
+                checkBoxNoJ2.Checked = false;
+            }
+
+            if (checkBoxYes3.CheckState == CheckState.Checked)
+            {
+                checkBoxYes3.Checked = false;
+            }
+            if (checkBoxNo3.CheckState == CheckState.Checked)
+            {
+                checkBoxNo3.Checked = false;
+            }
+
+            txtbxQuestion4.Text = "";
+            if (checkBoxYes4.CheckState == CheckState.Checked)
+            {
+                checkBoxYes4.Checked = false;
+            }
+            if (checkBoxNo4.CheckState == CheckState.Checked)
+            {
+                checkBoxNo4.Checked = false;
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -43,10 +43,10 @@
             this.txtbxDateOfVisit = new System.Windows.Forms.TextBox();
             this.txtbxTimeIn = new System.Windows.Forms.TextBox();
             this.txtbxTimeOut = new System.Windows.Forms.TextBox();
-            this.buttonDone = new System.Windows.Forms.Button();
+            this.buttonSubmit = new System.Windows.Forms.Button();
             this.lblTemperature = new System.Windows.Forms.Label();
             this.txtbxBodyTemperature = new System.Windows.Forms.TextBox();
-            this.buttonNewForm = new System.Windows.Forms.Button();
+            this.buttonReset = new System.Windows.Forms.Button();
             this.checkBoxYes1 = new System.Windows.Forms.CheckBox();
             this.checkBoxNo1 = new System.Windows.Forms.CheckBox();
             this.lblYes = new System.Windows.Forms.Label();
@@ -246,15 +246,15 @@
             this.txtbxTimeOut.Size = new System.Drawing.Size(126, 20);
             this.txtbxTimeOut.TabIndex = 14;
             // 
-            // buttonDone
+            // buttonSubmit
             // 
-            this.buttonDone.Location = new System.Drawing.Point(510, 712);
-            this.buttonDone.Name = "buttonDone";
-            this.buttonDone.Size = new System.Drawing.Size(140, 29);
-            this.buttonDone.TabIndex = 15;
-            this.buttonDone.Text = "Done";
-            this.buttonDone.UseVisualStyleBackColor = true;
-            this.buttonDone.Click += new System.EventHandler(this.buttonDoneClick);
+            this.buttonSubmit.Location = new System.Drawing.Point(656, 633);
+            this.buttonSubmit.Name = "buttonSubmit";
+            this.buttonSubmit.Size = new System.Drawing.Size(140, 29);
+            this.buttonSubmit.TabIndex = 15;
+            this.buttonSubmit.Text = "Submit";
+            this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonDoneClick);
             // 
             // lblTemperature
             // 
@@ -276,15 +276,15 @@
             this.txtbxBodyTemperature.Size = new System.Drawing.Size(97, 20);
             this.txtbxBodyTemperature.TabIndex = 17;
             // 
-            // buttonNewForm
+            // buttonReset
             // 
-            this.buttonNewForm.Location = new System.Drawing.Point(656, 712);
-            this.buttonNewForm.Name = "buttonNewForm";
-            this.buttonNewForm.Size = new System.Drawing.Size(140, 29);
-            this.buttonNewForm.TabIndex = 18;
-            this.buttonNewForm.Text = "New Form";
-            this.buttonNewForm.UseVisualStyleBackColor = true;
-            this.buttonNewForm.Click += new System.EventHandler(this.buttonNewFormClick);
+            this.buttonReset.Location = new System.Drawing.Point(15, 696);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(140, 29);
+            this.buttonReset.TabIndex = 18;
+            this.buttonReset.Text = "Reset";
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.buttonNewFormClick);
             // 
             // checkBoxYes1
             // 
@@ -815,10 +815,10 @@
             this.Controls.Add(this.lblYes);
             this.Controls.Add(this.checkBoxNo1);
             this.Controls.Add(this.checkBoxYes1);
-            this.Controls.Add(this.buttonNewForm);
+            this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.txtbxBodyTemperature);
             this.Controls.Add(this.lblTemperature);
-            this.Controls.Add(this.buttonDone);
+            this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.txtbxTimeOut);
             this.Controls.Add(this.txtbxTimeIn);
             this.Controls.Add(this.txtbxDateOfVisit);
@@ -861,10 +861,10 @@
         private System.Windows.Forms.TextBox txtbxDateOfVisit;
         private System.Windows.Forms.TextBox txtbxTimeIn;
         private System.Windows.Forms.TextBox txtbxTimeOut;
-        private System.Windows.Forms.Button buttonDone;
+        private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Label lblTemperature;
         private System.Windows.Forms.TextBox txtbxBodyTemperature;
-        private System.Windows.Forms.Button buttonNewForm;
+        private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.CheckBox checkBoxYes1;
         private System.Windows.Forms.CheckBox checkBoxNo1;
         private System.Windows.Forms.Label lblYes;
