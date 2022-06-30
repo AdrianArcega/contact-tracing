@@ -16,5 +16,17 @@ namespace arcega_contact_tracing
         {
             InitializeComponent();
         }
+
+        private void btnFilterClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDisplayDataClick(object sender, EventArgs e)
+        {
+            Form4 all = new Form4();
+            all.ShowDialog();
+            this.Hide();
+        }
     }
 }

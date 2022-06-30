@@ -10,3 +10,5 @@ C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Deb
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.AssemblyReference.cache
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.SuggestedBindingRedirects.cache
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega_contact_tracing.Form2.resources
+C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega_contact_tracing.Form3.resources
+C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega_contact_tracing.Form4.resources
