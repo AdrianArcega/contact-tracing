@@ -1,11 +1,12 @@
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\bin\Debug\arcega-contact-tracing.exe.config
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\bin\Debug\arcega-contact-tracing.exe
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\bin\Debug\arcega-contact-tracing.pdb
-C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.AssemblyReference.cache
-C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.SuggestedBindingRedirects.cache
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega_contact_tracing.Form1.resources
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega_contact_tracing.Properties.Resources.resources
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.GenerateResource.cache
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.exe
 C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.pdb
+C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\arcega-contact-tracing\arcega-contact-tracing\obj\Debug\arcega_contact_tracing.Form2.resources

@@ -93,6 +93,7 @@
             this.checkBoxYes3 = new System.Windows.Forms.CheckBox();
             this.lblQuestionB4 = new System.Windows.Forms.Label();
             this.txtbxQuestion4 = new System.Windows.Forms.TextBox();
+            this.buttonAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // formTitle
@@ -809,6 +810,16 @@
             this.txtbxQuestion4.Size = new System.Drawing.Size(161, 20);
             this.txtbxQuestion4.TabIndex = 63;
             // 
+            // buttonAdmin
+            // 
+            this.buttonAdmin.Location = new System.Drawing.Point(656, 696);
+            this.buttonAdmin.Name = "buttonAdmin";
+            this.buttonAdmin.Size = new System.Drawing.Size(140, 29);
+            this.buttonAdmin.TabIndex = 64;
+            this.buttonAdmin.Text = "Admin Login";
+            this.buttonAdmin.UseVisualStyleBackColor = true;
+            this.buttonAdmin.Click += new System.EventHandler(this.adminLogin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -818,6 +829,7 @@
             this.BackgroundImage = global::arcega_contact_tracing.Properties.Resources.appbackground_65_nature_outdoors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(808, 749);
+            this.Controls.Add(this.buttonAdmin);
             this.Controls.Add(this.txtbxQuestion4);
             this.Controls.Add(this.lblQuestionB4);
             this.Controls.Add(this.checkBoxNo4);
@@ -957,6 +969,7 @@
         private System.Windows.Forms.CheckBox checkBoxYes3;
         private System.Windows.Forms.Label lblQuestionB4;
         private System.Windows.Forms.TextBox txtbxQuestion4;
+        private System.Windows.Forms.Button buttonAdmin;
     }
 }
 

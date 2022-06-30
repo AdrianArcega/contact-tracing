@@ -19,7 +19,7 @@ namespace arcega_contact_tracing
         }
         private void buttonDoneClick(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo.txt");
+            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo.txt" , true);
             file.WriteLine("");
             file.WriteLine("Full Name :" + txtbxFullName.Text);
             file.WriteLine("Mobile/Phone Number :" + txtbxMobilePhoneNumber.Text);
@@ -280,6 +280,12 @@ namespace arcega_contact_tracing
             {
                 checkBoxNo4.Checked = false;
             }
+        }
+
+        private void adminLogin_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
         }
     }
 }
