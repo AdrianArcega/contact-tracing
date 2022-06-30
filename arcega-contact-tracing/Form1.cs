@@ -19,7 +19,7 @@ namespace arcega_contact_tracing
         }
         private void buttonDoneClick(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo\contact tracing list\" + txtbxFullName.Text + " " + txtbxDateOfVisit.Text + ".txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo\contact tracing list\" + txtbxFullName.Text + " " + txtbxDateOfVisit.Text + ".txt"); 
             file.WriteLine("");
             file.WriteLine("Full Name :" + txtbxFullName.Text);
             file.WriteLine("Mobile/Phone Number :" + txtbxMobilePhoneNumber.Text);
@@ -29,6 +29,17 @@ namespace arcega_contact_tracing
             file.WriteLine("Time of visit :" + txtbxTimeIn.Text);
             file.WriteLine("Time out :" + txtbxTimeOut.Text);
             file.WriteLine("Temperature :" + txtbxBodyTemperature.Text);
+
+            StreamWriter file1 = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo\dates\" + txtbxDateOfVisit.Text + ".txt", true);
+            file1.WriteLine("");
+            file1.WriteLine("Full Name :" + txtbxFullName.Text);
+            file1.WriteLine("Mobile/Phone Number :" + txtbxMobilePhoneNumber.Text);
+            file1.WriteLine("Email Address :" + txtbxEmailAddress.Text);
+            file1.WriteLine("Complete Address :" + txtbxCompleteAddress.Text);
+            file1.WriteLine("Date of visit :" + txtbxDateOfVisit.Text);
+            file1.WriteLine("Time of visit :" + txtbxTimeIn.Text);
+            file1.WriteLine("Time out :" + txtbxTimeOut.Text);
+            file1.WriteLine("Temperature :" + txtbxBodyTemperature.Text);
 
             if (checkBoxYes1.CheckState == CheckState.Checked)
             {
@@ -148,6 +159,125 @@ namespace arcega_contact_tracing
             }
             file.WriteLine("");
             file.Close();
+
+            if (checkBoxYes1.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestion1.Text + " : Yes");
+            }
+            if (checkBoxNo1.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestion1.Text + " : No");
+            }
+
+            if (checkBoxYesA2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestion2.Text + lblQuestionA2.Text + " : Yes");
+            }
+            if (checkBoxNoA2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestion2.Text + lblQuestionA2.Text + " : No");
+            }
+
+            if (checkBoxYesB2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionB2.Text + " : Yes");
+            }
+            if (checkBoxNoB2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionB2.Text + " : No");
+            }
+
+            if (checkBoxYesC2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionC2.Text + " : Yes");
+            }
+            if (checkBoxNoC2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionC2.Text + " : No");
+            }
+
+            if (checkBoxYesD2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionD2.Text + " : Yes");
+            }
+            if (checkBoxNoD2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionD2.Text + " : No");
+            }
+
+            if (checkBoxYesE2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionE2.Text + " : Yes");
+            }
+            if (checkBoxNoE2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionE2.Text + " : No");
+            }
+
+            if (checkBoxYesF2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionF2.Text + " : Yes");
+            }
+            if (checkBoxNoF2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionF2.Text + " : No");
+            }
+
+            if (checkBoxYesG2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionG2.Text + " : Yes");
+            }
+            if (checkBoxNoG2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionG2.Text + " : No");
+            }
+
+            if (checkBoxYesH2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionH2.Text + " : Yes");
+            }
+            if (checkBoxNoH2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionH2.Text + " : No");
+            }
+
+            if (checkBoxYesI2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionI2.Text + " : Yes");
+            }
+            if (checkBoxNoI2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionI2.Text + " : No");
+            }
+
+            if (checkBoxYesJ2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionJ2.Text + " : Yes");
+            }
+            if (checkBoxNoJ2.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionJ2.Text + " : No");
+            }
+
+            if (checkBoxYes3.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestion3.Text + " : Yes");
+            }
+            if (checkBoxNo3.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestion3.Text + " : No");
+            }
+
+            if (checkBoxYes4.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionA4.Text + " : Yes , Specific Country : " + txtbxQuestion4.Text);
+            }
+            if (checkBoxNo4.CheckState == CheckState.Checked)
+            {
+                file1.WriteLine(lblQuestionA4.Text + " : No");
+            }
+            file1.WriteLine("");
+            file1.Close();
 
             MessageBox.Show("You have submitted your form" , "Thank you!");
         }
