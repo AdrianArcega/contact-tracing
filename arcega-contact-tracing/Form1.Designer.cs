@@ -94,6 +94,7 @@
             this.lblQuestionB4 = new System.Windows.Forms.Label();
             this.txtbxQuestion4 = new System.Windows.Forms.TextBox();
             this.buttonAdmin = new System.Windows.Forms.Button();
+            this.lblDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // formTitle
@@ -820,6 +821,20 @@
             this.buttonAdmin.UseVisualStyleBackColor = true;
             this.buttonAdmin.Click += new System.EventHandler(this.adminLogin_Click);
             // 
+            // lblDate
+            // 
+            this.lblDate.AccessibleName = "";
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.lblDate.Location = new System.Drawing.Point(629, 54);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(128, 18);
+            this.lblDate.TabIndex = 65;
+            this.lblDate.Text = "(Month Day, Year)";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -829,6 +844,7 @@
             this.BackgroundImage = global::arcega_contact_tracing.Properties.Resources.appbackground_65_nature_outdoors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(808, 749);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.buttonAdmin);
             this.Controls.Add(this.txtbxQuestion4);
             this.Controls.Add(this.lblQuestionB4);
@@ -970,6 +986,7 @@
         private System.Windows.Forms.Label lblQuestionB4;
         private System.Windows.Forms.TextBox txtbxQuestion4;
         private System.Windows.Forms.Button buttonAdmin;
+        private System.Windows.Forms.Label lblDate;
     }
 }
 

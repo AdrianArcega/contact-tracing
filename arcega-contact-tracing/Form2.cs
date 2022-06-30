@@ -30,11 +30,15 @@ namespace arcega_contact_tracing
                 else
                 {
                     MessageBox.Show("Error: Wrong username or password");
+                    txtbxUser.Text = "";
+                    txtbxPassword.Text = "";
                 }
             }
             else
             {
                 MessageBox.Show("Error: Wrong username or password");
+                txtbxUser.Text = "";
+                txtbxPassword.Text = "";
             }
         }
     }
