@@ -19,7 +19,7 @@ namespace arcega_contact_tracing
         }
         private void buttonDoneClick(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo\" + txtbxFullName.Text +  "  + txtbxDateOfVisit.Text + .txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\user\Desktop\contact tracing demo\contact tracing list\" + txtbxFullName.Text + " " + txtbxDateOfVisit.Text + ".txt", true);
             file.WriteLine("");
             file.WriteLine("Full Name :" + txtbxFullName.Text);
             file.WriteLine("Mobile/Phone Number :" + txtbxMobilePhoneNumber.Text);
@@ -286,6 +286,11 @@ namespace arcega_contact_tracing
         {
             Form2 f2 = new Form2();
             f2.ShowDialog();
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
