@@ -22,10 +22,7 @@ namespace arcega_contact_tracing
         private void btnFilterClick(object sender, EventArgs e)
         {
             StreamReader filter = new StreamReader(@":C\Users\user\Desktop\contact tracing demo\dates\" + txtbxFilterDate.Text + "txt", true);
-            if(txtbxFilterDate.Text + "txt" =)
-                {
-                
-                }
+           
             String filteredlist = filter.ReadToEnd();
             MessageBox.Show(filteredlist);
 
@@ -34,6 +31,13 @@ namespace arcega_contact_tracing
         private void btnDisplayDataClick(object sender, EventArgs e)
         {
             Form4 all = new Form4();
+            all.ShowDialog();
+            this.Hide();
+        }
+
+        private void btnQRCodeGeneratorClick(object sender, EventArgs e)
+        {
+            Form6 all = new Form6();
             all.ShowDialog();
             this.Hide();
         }
