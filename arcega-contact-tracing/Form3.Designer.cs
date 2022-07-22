@@ -35,7 +35,6 @@
             this.txtbxFilterDate = new System.Windows.Forms.TextBox();
             this.lblFilterDate = new System.Windows.Forms.Label();
             this.lblMDY = new System.Windows.Forms.Label();
-            this.btnQRCodeGenerator = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDisplay
@@ -104,16 +103,6 @@
             this.lblMDY.TabIndex = 5;
             this.lblMDY.Text = "MM-DD-YYYY";
             // 
-            // btnQRCodeGenerator
-            // 
-            this.btnQRCodeGenerator.Location = new System.Drawing.Point(467, 349);
-            this.btnQRCodeGenerator.Name = "btnQRCodeGenerator";
-            this.btnQRCodeGenerator.Size = new System.Drawing.Size(174, 32);
-            this.btnQRCodeGenerator.TabIndex = 6;
-            this.btnQRCodeGenerator.Text = "QR Code Generator";
-            this.btnQRCodeGenerator.UseVisualStyleBackColor = true;
-            this.btnQRCodeGenerator.Click += new System.EventHandler(this.btnQRCodeGeneratorClick);
-            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -121,7 +110,6 @@
             this.BackgroundImage = global::arcega_contact_tracing.Properties.Resources.appbackground_65_nature_outdoors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(653, 393);
-            this.Controls.Add(this.btnQRCodeGenerator);
             this.Controls.Add(this.lblMDY);
             this.Controls.Add(this.lblFilterDate);
             this.Controls.Add(this.txtbxFilterDate);
@@ -147,6 +135,5 @@
         private System.Windows.Forms.TextBox txtbxFilterDate;
         private System.Windows.Forms.Label lblFilterDate;
         private System.Windows.Forms.Label lblMDY;
-        private System.Windows.Forms.Button btnQRCodeGenerator;
     }
 }

@@ -37,10 +37,5 @@ namespace arcega_contact_tracing
                 pcbxQRCode.Image.Save(qrimage.FileName);
             }
         }
-
-        private void btnScanQRClick(object sender, EventArgs e)
-        {
-
-        }
     }
 }

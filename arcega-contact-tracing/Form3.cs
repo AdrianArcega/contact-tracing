@@ -34,12 +34,5 @@ namespace arcega_contact_tracing
             all.ShowDialog();
             this.Hide();
         }
-
-        private void btnQRCodeGeneratorClick(object sender, EventArgs e)
-        {
-            Form6 all = new Form6();
-            all.ShowDialog();
-            this.Hide();
-        }
     }
 }

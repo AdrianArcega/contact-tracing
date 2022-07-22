@@ -34,7 +34,6 @@
             this.txtbxQRCode = new System.Windows.Forms.TextBox();
             this.btnGenerateQR = new System.Windows.Forms.Button();
             this.btnSaveQR = new System.Windows.Forms.Button();
-            this.btnScanQR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbxQRCode)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,8 +65,7 @@
             this.txtbxQRCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtbxQRCode.Size = new System.Drawing.Size(337, 251);
             this.txtbxQRCode.TabIndex = 2;
-            this.txtbxQRCode.Text = "\r\nFull Name :\r\nMobile/Phone Number :\r\nEmail Address :\r\nComplete Address :\r\nDate o" +
-    "f visit :\r\nTime of visit :\r\nTime out :\r\nTemperature :";
+            this.txtbxQRCode.Text = resources.GetString("txtbxQRCode.Text");
             // 
             // btnGenerateQR
             // 
@@ -89,16 +87,6 @@
             this.btnSaveQR.UseVisualStyleBackColor = true;
             this.btnSaveQR.Click += new System.EventHandler(this.btnSaveQRClick);
             // 
-            // btnScanQR
-            // 
-            this.btnScanQR.Location = new System.Drawing.Point(760, 495);
-            this.btnScanQR.Name = "btnScanQR";
-            this.btnScanQR.Size = new System.Drawing.Size(135, 37);
-            this.btnScanQR.TabIndex = 5;
-            this.btnScanQR.Text = "Scan QR Code";
-            this.btnScanQR.UseVisualStyleBackColor = true;
-            this.btnScanQR.Click += new System.EventHandler(this.btnScanQRClick);
-            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -106,7 +94,6 @@
             this.BackgroundImage = global::arcega_contact_tracing.Properties.Resources.appbackground_65_nature_outdoors;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(907, 544);
-            this.Controls.Add(this.btnScanQR);
             this.Controls.Add(this.btnSaveQR);
             this.Controls.Add(this.btnGenerateQR);
             this.Controls.Add(this.txtbxQRCode);
@@ -129,6 +116,5 @@
         private System.Windows.Forms.TextBox txtbxQRCode;
         private System.Windows.Forms.Button btnGenerateQR;
         private System.Windows.Forms.Button btnSaveQR;
-        private System.Windows.Forms.Button btnScanQR;
     }
 }
