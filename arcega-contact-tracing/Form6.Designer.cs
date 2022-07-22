@@ -66,6 +66,8 @@
             this.txtbxQRCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtbxQRCode.Size = new System.Drawing.Size(337, 251);
             this.txtbxQRCode.TabIndex = 2;
+            this.txtbxQRCode.Text = "\r\nFull Name :\r\nMobile/Phone Number :\r\nEmail Address :\r\nComplete Address :\r\nDate o" +
+    "f visit :\r\nTime of visit :\r\nTime out :\r\nTemperature :";
             // 
             // btnGenerateQR
             // 

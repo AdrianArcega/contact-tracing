@@ -28,7 +28,14 @@ namespace arcega_contact_tracing
 
         private void btnSaveQRClick(object sender, EventArgs e)
         {
-
+            string location = @"C:\Users\acer\Desktop\QR codes";
+            var qrimage = new SaveFileDialog();
+            qrimage.InitialDirectory = location;
+            qrimage.Filter = "PNG|*.png|JPEG|*.jpg";
+            if (qrimage.ShowDialog() == DialogResult.OK)
+            {
+                pcbxQRCode.Image.Save(qrimage.FileName);
+            }
         }
 
         private void btnScanQRClick(object sender, EventArgs e)
