@@ -53,7 +53,6 @@
             this.pcbxQRCode.Location = new System.Drawing.Point(60, 74);
             this.pcbxQRCode.Name = "pcbxQRCode";
             this.pcbxQRCode.Size = new System.Drawing.Size(401, 392);
-            this.pcbxQRCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pcbxQRCode.TabIndex = 1;
             this.pcbxQRCode.TabStop = false;
             // 
