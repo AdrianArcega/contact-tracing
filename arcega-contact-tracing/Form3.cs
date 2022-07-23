@@ -21,35 +21,36 @@ namespace arcega_contact_tracing
 
         private void btnFilterClick(object sender, EventArgs e)
         {
-            List<string> dates = new List<string>();
+            List<string> date = new List<string>();
             string Date = txtbxFilterDate.Text;
-            int dateResult = 0;
+            int resultsFound = 0;
             var txtfiles = Directory.EnumerateFiles(@"C:\Users\acer\Desktop\contact tracing demo\dates");
             foreach (string file in txtfiles)
             {
                 string contents = File.ReadAllText(file);
                 if (contents.Contains(Date))
                 {
-                    dates.Add(contents);
-                    dateResult++;
+                    date.Add(contents);
+                    resultsFound++;
                     continue;
                 }
             }
-            if (dateResult == 0)
+            if (resultsFound == 0)
             {
                 MessageBox.Show("No records found");
             }
             else
             {
                 StreamWriter file = new StreamWriter(@"C:\Users\acer\Desktop\contact tracing demo\dates\" + txtbxFilterDate.Text +".txt");
-                foreach (string contents in dates)
+                foreach (string contents in date)
                 {
-                    var lastItem = dates.LastOrDefault();
+                    var lastItem = date.LastOrDefault();
                     file.WriteLine(contents);
+                    MessageBox.Show(contents);
+
                 }
                 file.Close();
-                MessageBox.Show("Found " + dateResult + "records on the selected date");
-                MessageBox.Show("This will be save in the Contact Tracing folder");
+
             }
         }
 
