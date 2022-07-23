@@ -11,8 +11,6 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
 using ZXing.Aztec;
-using System.Net;
-using System.Net.Http;
 using System.IO;
 
 namespace arcega_contact_tracing
@@ -23,22 +21,56 @@ namespace arcega_contact_tracing
         {
             InitializeComponent();
         }
+        FilterInfoCollection filterCollection;
+        VideoCaptureDevice videoCapture;
 
 
         private void form7Load(object sender, EventArgs e)
         {
-
+            filterCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo filterInfo in filterCollection)
+                cboxCamera.Items.Add(filterInfo.Name);
+            cboxCamera.SelectedIndex = 0;
         }
         private void btnRunClick(object sender, EventArgs e)
         {
-
+            videoCapture = new VideoCaptureDevice(filterCollection[cboxCamera.SelectedIndex].MonikerString);
+            videoCapture.NewFrame += CaptureDevice_NewFrame;
+            videoCapture.Start();
+            timer1.Start();
         }
-
-        private void timerRunTick(object sender, EventArgs e)
+        private void formScannerClosing(object sender, FormClosingEventArgs e)
         {
-
+            if (videoCapture.IsRunning)
+                videoCapture.Stop();
+        }
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            picbxCam.Image = (Bitmap)eventArgs.Frame.Clone();
         }
 
+        private void timerQRScannerTick(object sender, EventArgs e)
+        {
+            if (picbxCam.Image !=null)
+            {
+                BarcodeReader QRReader = new BarcodeReader();
+                Result result = QRReader.Decode((Bitmap)picbxCam.Image);
+                if (result != null)
+                {
+                    timer1.Stop();
+                    MessageBox.Show("Your response have been recorded, Thank you! , Recorded");
+                    string data = result.ToString();
+                    StringBuilder build = new StringBuilder(data);
+                    data = build.ToString();
+                    string showData = data;
+                    StreamWriter file = new StreamWriter(@"C:\C:\Users\acer\Desktop\contact tracing demo\contact tracing list\" + txtbxFullName1.Text + " " + txtbxDateOfVisit1.Text + ".txt", true);
+                    file.Write(showData);
+                    file.Close();
+                    if (videoCapture.IsRunning)
+                        videoCapture.Stop();
+                }
+            }
 
+        }
     }
 }

@@ -31,3 +31,14 @@ C:\Users\acer\Source\Repos\contact-tracing\arcega-contact-tracing\bin\Debug\arce
 C:\Users\acer\Source\Repos\contact-tracing\arcega-contact-tracing\bin\Debug\arcega-contact-tracing.pdb
 C:\Users\acer\Source\Repos\contact-tracing\arcega-contact-tracing\bin\Debug\QRCoder.dll
 C:\Users\acer\Source\Repos\contact-tracing\arcega-contact-tracing\obj\Debug\arcega-contact-tracing.csproj.CopyComplete
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\AForge.dll
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\AForge.Video.dll
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\zxing.dll
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\zxing.presentation.dll
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\AForge.xml
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\AForge.Video.xml
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\zxing.xml
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\bin\Debug\zxing.presentation.xml
+C:\Users\acer\source\repos\contact-tracing\arcega-contact-tracing\obj\Debug\arcega_contact_tracing.Form7.resources
