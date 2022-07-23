@@ -19,7 +19,7 @@ namespace arcega_contact_tracing
         }
         private void buttonDoneClick(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\C:\Users\acer\Desktop\contact tracing demo\contact tracing list\" + txtbxFullName.Text + " " + txtbxDateOfVisit.Text + ".txt");
+            StreamWriter file = new StreamWriter(@"C:\Users\acer\Desktop\contact tracing demo\contact tracing list\" + txtbxFullName.Text + " " + txtbxDateOfVisit.Text + ".txt");
             file.WriteLine("");
             file.WriteLine("Full Name :" + txtbxFullName.Text);
             file.WriteLine("Mobile/Phone Number :" + txtbxMobilePhoneNumber.Text);
@@ -30,7 +30,7 @@ namespace arcega_contact_tracing
             file.WriteLine("Time out :" + txtbxTimeOut.Text);
             file.WriteLine("Temperature :" + txtbxBodyTemperature.Text);
 
-            StreamWriter file1 = new StreamWriter(@"C:\C:\Users\acer\Desktop\contact tracing demo\dates\" + txtbxDateOfVisit.Text + ".txt", true);
+            StreamWriter file1 = new StreamWriter(@"C:\Users\acer\Desktop\contact tracing demo\dates\" + txtbxDateOfVisit.Text + ".txt", true);
             file1.WriteLine("");
             file1.WriteLine("Full Name :" + txtbxFullName.Text);
             file1.WriteLine("Mobile/Phone Number :" + txtbxMobilePhoneNumber.Text);

@@ -42,7 +42,7 @@
             this.txtbxFullName1 = new System.Windows.Forms.TextBox();
             this.labelFullName = new System.Windows.Forms.Label();
             this.labelFullName1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerQR = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picbxCam)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,6 +89,7 @@
             this.picbxCam.Location = new System.Drawing.Point(213, 137);
             this.picbxCam.Name = "picbxCam";
             this.picbxCam.Size = new System.Drawing.Size(502, 462);
+            this.picbxCam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picbxCam.TabIndex = 4;
             this.picbxCam.TabStop = false;
             // 
@@ -193,9 +194,10 @@
             this.labelFullName1.Text = "FULL NAME :";
             this.labelFullName1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // timer1
+            // timerQR
             // 
-            this.timer1.Interval = 1000;
+            this.timerQR.Interval = 1000;
+            this.timerQR.Tick += new System.EventHandler(this.timerQRTick);
             // 
             // Form7
             // 
@@ -234,7 +236,6 @@
         private System.Windows.Forms.Label lblScanQR;
         private System.Windows.Forms.ComboBox cboxCamera;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox picbxCam;
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Label lblFullName1;
         private System.Windows.Forms.Label lblDate1;
@@ -243,6 +244,7 @@
         private System.Windows.Forms.TextBox txtbxFullName1;
         private System.Windows.Forms.Label labelFullName;
         private System.Windows.Forms.Label labelFullName1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timerQR;
+        private System.Windows.Forms.PictureBox picbxCam;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
@@ -22,7 +23,7 @@ namespace arcega_contact_tracing
             InitializeComponent();
         }
         FilterInfoCollection filterCollection;
-        VideoCaptureDevice videoCapture;
+        VideoCaptureDevice videoDevice;
 
 
         private void form7Load(object sender, EventArgs e)
@@ -34,43 +35,44 @@ namespace arcega_contact_tracing
         }
         private void btnRunClick(object sender, EventArgs e)
         {
-            videoCapture = new VideoCaptureDevice(filterCollection[cboxCamera.SelectedIndex].MonikerString);
-            videoCapture.NewFrame += CaptureDevice_NewFrame;
-            videoCapture.Start();
-            timer1.Start();
+            videoDevice = new VideoCaptureDevice(filterCollection[cboxCamera.SelectedIndex].MonikerString);
+            videoDevice.NewFrame += CaptureDevice_NewFrame;
+            videoDevice.Start();
+            timerQR.Start();
         }
-        private void formScannerClosing(object sender, FormClosingEventArgs e)
-        {
-            if (videoCapture.IsRunning)
-                videoCapture.Stop();
-        }
+
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             picbxCam.Image = (Bitmap)eventArgs.Frame.Clone();
         }
-
-        private void timerQRScannerTick(object sender, EventArgs e)
+        private void formScannerClosing(object sender, FormClosingEventArgs e)
         {
-            if (picbxCam.Image !=null)
+            if (videoDevice.IsRunning)
+                videoDevice.Stop();
+        }
+
+        private void timerQRTick(object sender, EventArgs e)
+        {
+            if (picbxCam.Image != null)
             {
                 BarcodeReader QRReader = new BarcodeReader();
                 Result result = QRReader.Decode((Bitmap)picbxCam.Image);
                 if (result != null)
                 {
-                    timer1.Stop();
-                    MessageBox.Show("Your response have been recorded, Thank you! , Recorded");
+                    timerQR.Stop();
                     string data = result.ToString();
                     StringBuilder build = new StringBuilder(data);
                     data = build.ToString();
                     string showData = data;
-                    StreamWriter file = new StreamWriter(@"C:\C:\Users\acer\Desktop\contact tracing demo\contact tracing list\" + txtbxFullName1.Text + " " + txtbxDateOfVisit1.Text + ".txt", true);
+                    MessageBox.Show(showData);
+                    MessageBox.Show("Your response have been recorded, Thank you! , Recorded");
+                    StreamWriter file = new StreamWriter(@"C:\Users\acer\Desktop\contact tracing demo\contact tracing list\" + txtbxFullName1.Text + " " + txtbxDateOfVisit1.Text + ".txt");
                     file.Write(showData);
                     file.Close();
-                    if (videoCapture.IsRunning)
-                        videoCapture.Stop();
+                    if (videoDevice.IsRunning)
+                        videoDevice.Stop();
                 }
             }
-
         }
     }
 }

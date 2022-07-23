@@ -16,7 +16,7 @@ namespace arcega_contact_tracing
         public Form4()
         {
             InitializeComponent();
-            var datafiles = Directory.GetFiles(@"C:\Users\user\Desktop\contact tracing demo\contact tracing list");
+            var datafiles = Directory.GetFiles(@"C:\Users\acer\Desktop\contact tracing demo\contact tracing list");
             foreach (string data in datafiles)
             {
                 string combinedtext = System.IO.File.ReadAllText(data);
